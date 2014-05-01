@@ -1,0 +1,11 @@
+name: Chicken Shoot
+version: ALPHA
+description: Created by BURNED_ICEEE.
+author: [Sky_General109]
+main: com.zg.chickenshoot.Main
+commands:
+  chickenshoot:
+    description: Main Chicken Shoot command.
+    aliases: [chicken, chick, cs]
+  testing:
+    
