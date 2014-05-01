@@ -15,17 +15,21 @@ import org.bukkit.scoreboard.Score;
 import com.zg.chickenshoot.Main;
 
 public class Game1Message extends BukkitRunnable {
+	
 	private ItemStack bow = new ItemStack(Material.BOW);
 	Main plugin;
 	private final String message;
 	Game1Mech mechs;
+	
 	public Game1Message(Main plugin, String m, Game1Mech mechs){
 		super();
 		message = m;
 		this.plugin = plugin;
 		this.mechs = mechs;
 	}
+	
 	@Override
+	@SuppressWarnings("deprecation")
 	public void run(){
 		for(Player player : Bukkit.getOnlinePlayers()){
 			if(plugin.inLobby.contains(player.getName())){
